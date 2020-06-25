@@ -1,12 +1,13 @@
 import React from 'react';
+import './Form.css';
 
 class Form extends React.Component {
 	render (){
 		return (
-			<div>
+			<div className="Form">
 				<form onSubmit={this.props.getWeather}>
-					<input type="text" name="city" placehold="City"/>
-					<input type="text" name="country" placehold="Country"/>
+					<input type="text" name="city" placeholder="City"/>
+					<input type="text" name="country" placeholder="Country"/>
 					<button>Get Weather</button>
 				</form>
 			</div>	
